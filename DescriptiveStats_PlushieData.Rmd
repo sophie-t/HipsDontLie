@@ -135,6 +135,27 @@ median(plush.dat$DistanceBetweenKnees)
 range.flex <- max(plush.dat$Flexion) - min(plush.dat$Flexion)
 range.flex
 #Answer: 11 degrees
+range.extension <- max(plush.dat$Extension) - min(plush.dat$Extension)
+range.extension
+#Answer: 32 degrees
+range.adduction <- max(plush.dat$Adduction) - min(plush.dat$Adduction)
+range.adduction
+#Answer: 5 degrees
+range.abduction <- max(plush.dat$Abduction) - min(plush.dat$Abduction)
+range.abduction
+#Answer: 3 degrees
+range.PelvicBreadth <- max(plush.dat$PelvicBreadth) - min(plush.dat$PelvicBreadth)
+range.PelvicBreadth
+#Answer: 1 degree
+range.MidthighCircumference <- max(plush.dat$MidthighCircumference) - min(plush.dat$MidthighCircumference)
+range.MidthighCircumference
+#Answer : 0.5
+range.ThighLength <- max(plush.dat$ThighLength) - min(plush.dat$ThighLength)
+range.ThighLength
+#Answer : 2.5 
+range.DistanceBetweenKnees <- max(plush.dat$DistanceBetweenKnees) - min(plush.dat$DistanceBetweenKnees)
+range.DistanceBetweenKnees
+#Answer : 7
 
 
 
@@ -158,7 +179,22 @@ range.flex
 # Interquartile Range: To calculate the IQR of a variable, we use the function IQR() .
 
 # Calculate the IQR for each of the 8 variables in plush.dat. Make sure to write down both your code and the answers below:
-
+IQR(plush.dat$Flexion)
+#Answer : 8.75 degrees
+IQR(plush.dat$Extension)
+# Answer : 29.75 degrees
+IQR(plush.dat$Adduction)
+# Answer : 1.25 degrees
+IQR(plush.dat$Abduction)
+# Answer : 0.75 
+IQR(plush.dat$PelvicBreadth)
+# Answer : 0.25
+IQR(plush.dat$MidthighCircumference)
+#Answer : 0.5
+IQR(plush.dat$ThighLength)
+#Answer : 2.125
+IQR(plush.dat$DistanceBetweenKnees)
+#Answer : 6.25
 
 
 
@@ -180,7 +216,22 @@ range.flex
 # Variance: To calculate the variance of a variable, we use the function var() .
 
 # Calculate the variances for each of the 8 variables in plush.dat. Make sure to write down both your code and the answers below:
-
+var(plush.dat$Flexion)
+#Answer: 31.58333
+var(plush.dat$Extension)
+#Answer: 311.5833
+var(plush.dat$Adduction)
+#Answer: 6.25
+var(plush.dat$Abduction)
+#Answer: 2.25
+var(plush.dat$PelvicBreadth)
+#Answer: 0.25
+var(plush.dat$MidthighCircumference)
+#Answer: 0.08333333
+var(plush.dat$ThighLength)
+#Answer: 1.729167
+var(plush.dat$DistanceBetweenKnees)
+#Answer: 14.25
 
 
 
@@ -201,8 +252,22 @@ range.flex
 # Standard Deviation: To calculate the SD of a variable, we use the function sd() .
 
 # Calculate the SD for each of the 8 variables in plush.dat. Make sure to write down both your code and the answers below:
-
-
+sd(plush.dat$Flexion)
+#Answer: 5.619905
+sd(plush.dat$Extension)
+#Answer: 17.65172
+sd(plush.dat$Adduction)
+#Answer: 2.5
+sd(plush.dat$Abduction)
+#Answer: 1.5
+sd(plush.dat$PelvicBreadth)
+#Answer: 0.5
+sd(plush.dat$MidthighCircumference)
+#Answer: 0.2886751
+sd(plush.dat$ThighLength)
+#Answer: 1.314978
+sd(plush.dat$DistanceBetweenKnees)
+#Answer: 3.774917
 
 
 
