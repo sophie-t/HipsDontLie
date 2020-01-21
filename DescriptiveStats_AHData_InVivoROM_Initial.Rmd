@@ -51,7 +51,7 @@ rom.dat <- read.csv(file.choose(), row.names = NULL)
 
 
 # Print rom.dat into the Console below. You should now see your data in the Console, and see rom.dat in the Environment tab to the right. How many variables do you see?
-
+rom.dat
 
 
 # In the last few classes before break, we learned about various descriptive statistics (like mean and standard deviation). Please review your notes and ask questions to remind yourself what these statistics are!
@@ -63,14 +63,35 @@ rom.dat <- read.csv(file.choose(), row.names = NULL)
 # For example:
 mean(rom.dat$Flexion)
 # Answer: _ degrees
-
-
+mean(rom.dat$Extension)
+#Answer: 149.9062
+mean(rom.dat$Flexion)
+# Answer: 30.3125 degrees
+mean(rom.dat$Abduction)
+#Answer: 115.375
+mean(rom.dat$Adduction)
+#Answer: 56.15625
+mean(rom.dat$ThighCircumference)
+#Answer: 22.71875
+mean(rom.dat$ThighLength)
+#Answer: 16.3125
 
 
 # Median: To calculate the median of a variable, we use the function median() .
 
 # Calculate the medians for each of the variables in rom.dat. Make sure to write down both your code and the answers below:
-
+median(rom.dat$Extension)
+#Answer: 150
+median(rom.dat$Flexion)
+#Answer: 30.3125 degrees
+median(rom.dat$Abduction)
+#Answer: 114.5
+median(rom.dat$Adduction)
+#Answer: 55
+median(rom.dat$ThighCircumference)
+#Answer: 23
+median(rom.dat$ThighLength)
+#Answer: 16.5
 
 
 # Range: To calculate the range of a variable, we use the min() and max() functions to calculate the minimum and maximum values in the dataset. Then, we subtract the min from the max.
@@ -80,19 +101,58 @@ mean(rom.dat$Flexion)
 range.flex <- max(rom.dat$Flexion) - min(rom.dat$Flexion)
 range.flex
 #Answer: _ degrees
-
+max(rom.dat$Extension)
+min(rom.dat$Extension)
+#36
+max(rom.dat$Flexion)
+min(rom.dat$Flexion)
+#30
+max(rom.dat$Abduction)
+min(rom.dat$Abduction)
+#27
+max(rom.dat$Adduction)
+min(rom.dat$Adduction)
+#43
+max(rom.dat$ThighCircumference)
+min(rom.dat$ThighCircumference)
+#15.5
+max(rom.dat$ThighLength)
+min(rom.dat$ThighLength)
+#12
 
 
 
 # Interquartile Range: To calculate the IQR of a variable, we use the function IQR() .
 
 # Calculate the IQR for each of the variables in rom.dat. Make sure to write down both your code and the answers below:
-
-
+IQR(rom.dat$Extension)
+#12
+IQR(rom.dat$Flexion)
+#4.25
+IQR(rom.dat$Abduction)
+#7.5
+IQR(rom.dat$Adduction)
+#14
+IQR(rom.dat$ThighCircumference)
+#7.5
+IQR(rom.dat$ThighLength)
+#4
 
 # Variance: To calculate the variance of a variable, we use the function var() .
 
 # Calculate the variances for each of the variables in rom.dat. Make sure to write down both your code and the answers below:
+var(rom.dat$Extension)
+#76.79738
+var(rom.dat$Flexion)
+#22.80242
+var(rom.dat$Abduction)
+#39.01613
+var(rom.dat$Adduction)
+#105.2974
+var(rom.dat$ThighCircumference)
+#18.07964
+var(rom.dat$ThighLength)
+#10.54435
 
 
 
@@ -100,12 +160,24 @@ range.flex
 
 # Calculate the SD for each of the variables in rom.dat. Make sure to write down both your code and the answers below:
 
-
+sd(rom.dat$Extension)
+#8.763411
+sd(rom.dat$Flexion)
+#4.775188
+sd(rom.dat$Abduction)
+#6.246289
+sd(rom.dat$Adduction)
+#10.26145
+sd(rom.dat$ThighCircumference)
+#4.252016
+sd(rom.dat$ThighLength)
+#3.247207
 
 # Now, compare your answers with those of the other person using the same dataset as you!
 
 # Together, work to compile the statistics (mean, median, etc.) of each variable (Extension, Flexion, etc.) into vectors. Then compile these vectors into matrices/dataframes/lists with labels. Your end goal is to have one variable that, when printed, shows you every statistic for every variable.
 
+extension <- c()
 
 
 
