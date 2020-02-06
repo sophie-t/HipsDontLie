@@ -63,43 +63,218 @@ morph.dat <- read.csv(file.choose(), row.names = NULL)
 
 # 3. Print morph.dat into the Console below. How many variables do you have?
 ```{r}
-
+morph.dat
 ```
 
 
 # 4. Calculate the means for each of the variables in morph.dat, and assign each a name. Make sure to write down both your code and the answers below:
 ```{r}
 # Example:
-flex.mean <- mean(rom.dat$Flexion)
-flex.mean
+femur.mean <- mean(morph.dat$FemurHead)
+femur.mean
+#12.93180
+nsa.mean <- mean(morph.dat$NSA)
+nsa.mean
+#108.8113
+necklength.mean <- mean(morph.dat$NeckLength)
+necklength.mean
+#12.90188
+L2.mean <- mean(morph.dat$L2)
+L2.mean
+#132.4806
+L4.mean <- mean(morph.dat$L4)
+L4.mean
+#13.24188
+FTA.mean <- mean(morph.dat$FTA)
+FTA.mean
+#66.35313
+PS.mean <- mean(morph.dat$PS)
+PS.mean
+#99.61062
+PI.mean <- mean(morph.dat$PI)
+PI.mean
+#54.3975
+AS.mean <- mean(morph.dat$AS)
+AS.mean
+#99.83
+AI.mean <- mean(morph.dat$AI)
+AI.mean
+#78.055
+TotalArea.mean <- mean(morph.dat$TotalArea)
+TotalArea.mean
+#331.8925
+SUP.mean <- mean(morph.dat$SUP)
+SUP.mean
+#114.4106
+ANT.mean <- mean(morph.dat$ANT)
+ANT.mean
+#97.07937
+AcetabularDiameter.mean <- mean(morph.dat$AcetabularDiameter)
+AcetabularDiameter.mean
+#14.30312
+PelvicBreadth.mean <- mean(morph.dat$PelvicBreadth)
+PelvicBreadth.mean
+#27.13875
 ```
 
 ```{r}
-
+morph.dat
 ```
 
 
 # 5. Calculate the medians for each of the variables in morph.dat, and assign each a name. Make sure to write down both your code and the answers below:
 ```{r}
-
+FemurHead.median <- median(morph.dat$FemurHead)
+FemurHead.median
+#13.35
+NSA.median <- median(morph.dat$NSA)
+NSA.median
+#109.03
+NeckLength.median <- median(morph.dat$NeckLength)
+NeckLength.median
+#12.725
+L2.median <- median(morph.dat$L2)
+L2.median
+#122.745
+L4.median <- median(morph.dat$L4)
+L4.median
+#12.175
+FTA.median <- median(morph.dat$FTA)
+FTA.median
+#65.46
+PS.median <- median(morph.dat$PS)
+PS.median
+#99.655
+PI.median <- median(morph.dat$PI)
+PI.median
+#49.29
+AS.median <- median(morph.dat$AS)
+AS.median
+#101.685
+AI.median <- median(morph.dat$AI)
+AI.median
+#80.425
+TotalArea.median <- median(morph.dat$TotalArea)
+TotalArea.median
+#331.055
+SUP.median <- median(morph.dat$SUP)
+SUP.median
+#114.87
+ANT.median <- median(morph.dat$ANT)
+ANT.median
+#96.93
+AcetabularDiameter.median <- median(morph.dat$AcetabularDiameter)
+AcetabularDiameter.median
+#14.435
+PelvicBreadth.median <- median(morph.dat$PelvicBreadth)
+PelvicBreadth.median
+#26.28
 ```
 
 
 # 6. Calculate the ranges for each of the variables in morph.dat, and assign each a name. Make sure to write down both your code and the answers below:
 ```{r}
+FemurHead.range <- max(morph.dat$FemurHead)-min(morph.dat$FemurHead)
+FemurHead.range
+#6.71
+NSA.range <- max(morph.dat$NSA)-min(morph.dat$NSA)
+NSA.range
+#19.44
+NeckLength.range <- max(morph.dat$NeckLength)-min(morph.dat$NeckLength)
+NeckLength.range
+#9
+L2.range <- max(morph.dat$L2)-min(morph.dat$L2)
+L2.range
+#78.04
+L4.range <- max(morph.dat$L4)-min(morph.dat$L4)
+L4.range
+#9.45
+FTA.range <- max(morph.dat$L4)-min(morph.dat$FTA)
+FTA.range
+#-41.44
+PS.range <- max(morph.dat$PS)-min(morph.dat$PS)
+PS.range
+#107.84
+PI.range <- max(morph.dat$PI)-min(morph.dat$PI)
+PI.range
+#61.35
+AS.range <- max(morph.dat$AS)-min(morph.dat$AS)
+AS.range
+#99.94
+AI.range <- max(morph.dat$AI)-min(morph.dat$AI)
+AI.range 
+#76.81
+TotalArea.range <- max(morph.dat$TotalArea)-min(morph.dat$TotalArea)
+TotalArea.range
+#341.57
+SUP.range <- max(morph.dat$SUP)-min(morph.dat$SUP)
+SUP.range
+#22.74
+ANT.range <- max(morph.dat$ANT)-min(morph.dat$ANT)
+ANT.range
+#16.75
+AcetabularDiameter.range <- max(morph.dat$AcetabularDiameter)-min(morph.dat$AcetabularDiameter)
+AcetabularDiameter.range
+#7.32
+PelvicBreadth.range <- max(morph.dat$PelvicBreadth)-min(morph.dat$PelvicBreadth)
+PelvicBreadth.range
+#13.83
 
 ```
 
 
 # 7. Calculate the Interquartile Range (IQR) for each of the variables in morph.dat, and assign each a name. Make sure to write down both your code and the answers below:
 ```{r}
-
+IQR(morph.dat$FemurHead)
+#4.3425
+IQR(morph.dat$NSA)
+#6.335
+IQR(morph.dat$NeckLength)
+#3.08
+IQR(morph.dat$L2)
+#34.3675
+IQR(morph.dat$L4)
+#3.7175
+IQR(morph.dat$FTA)
+#6.66
+IQR(morph.dat$PS)
+#59.98
+IQR(morph.dat$PI)
+#28.235
+IQR(morph.dat$AS)
+#62.5825
+IQR(morph.dat$AI)
+#37.975
+IQR(morph.dat$TotalArea)
+#188.5975
+IQR(morph.dat$SUP)
+#5.7825
+IQR(morph.dat$ANT)
+#4.2375
+IQR(morph.dat$AcetabularDiameter)
+#4.24
+IQR(morph.dat$PelvicBreadth)
+#3.2525
 ```
 
 
 # 8. Calculate the variance for each of the variables in morph.dat, and assign each a name. Make sure to write down both your code and the answers below:
 ```{r}
-
+var(morph.dat$FemurHead)
+var(morph.dat$NSA)
+var(morph.dat$NeckLength)
+var(morph.dat$L2)
+var(morph.dat$L4)
+var(morph.dat$FTA)
+var(morph.dat$PS)
+var(morph.dat$PI)
+var(morph.dat$AS)
+var(morph.dat$AI)
+var(morph.dat$TotalArea)
+var(morph.dat$SUP)
+var(morph.dat$ANT)
+var(morph.dat$AcetabularDiameter)
+var(morph.dat$PelvicBreadth)
 ```
 
 
