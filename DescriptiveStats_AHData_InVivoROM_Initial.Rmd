@@ -177,7 +177,21 @@ sd(rom.dat$ThighLength)
 
 # Together, work to compile the statistics (mean, median, etc.) of each variable (Extension, Flexion, etc.) into vectors. Then compile these vectors into matrices/dataframes/lists with labels. Your end goal is to have one variable that, when printed, shows you every statistic for every variable.
 
-extension <- c()
+extension <- c(149.9062, 150, 36, 12, 76.79738, 8.763411)
+flexion <- c(30.3125, 31, 30, 4.25, 22.80242, 4.775188)
+abduction <- c(115.375, 114.5, 27, 7.5, 39.01613, 6.246289)
+adduction <- c(56.15625, 55, 43, 14, 105.2974, 10.26145)
+thighcircumfrence <- c(22.71875, 23, 15.5, 7.5, 18.07964, 4.252016)
+thighlength <- c(16.3125, 16.5, 12, 4, 10.54435, 3.247207)
+
+mean.ex <- (rom.dat$Extension)
+mean.fl <- (rom.dat$Flexion)
+mean.ab <- (rom.dat$Abduction)
+mean.ad <- (rom.dat$Adduction)
+mean.tc <- (rom.dat$ThighCircumference)
+mean.tl <- (rom.dat$ThighLength)
+
+means <- c(mean.ex, mean.fl, mean.ab, mean.ad, mean.tc, mean.tl)
 
 
 
