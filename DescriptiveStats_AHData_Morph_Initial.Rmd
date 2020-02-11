@@ -189,9 +189,9 @@ L2.range
 L4.range <- max(morph.dat$L4)-min(morph.dat$L4)
 L4.range
 #9.45
-FTA.range <- max(morph.dat$L4)-min(morph.dat$FTA)
+FTA.range <- max(morph.dat$FTA)-min(morph.dat$FTA)
 FTA.range
-#-41.44
+#13.35
 PS.range <- max(morph.dat$PS)-min(morph.dat$PS)
 PS.range
 #107.84
@@ -225,62 +225,151 @@ PelvicBreadth.range
 
 # 7. Calculate the Interquartile Range (IQR) for each of the variables in morph.dat, and assign each a name. Make sure to write down both your code and the answers below:
 ```{r}
-IQR(morph.dat$FemurHead)
+FemurHead.IQR <- IQR(morph.dat$FemurHead)
+FemurHead.IQR
 #4.3425
-IQR(morph.dat$NSA)
+NSA.IQR <- IQR(morph.dat$NSA)
+NSA.IQR
 #6.335
-IQR(morph.dat$NeckLength)
+NeckLength.IQR <- IQR(morph.dat$NeckLength)
+NeckLength.IQR
 #3.08
-IQR(morph.dat$L2)
+L2.IQR <- IQR(morph.dat$L2)
+L2.IQR
 #34.3675
-IQR(morph.dat$L4)
+L4.IQR <- IQR(morph.dat$L4)
+L4.IQR
 #3.7175
-IQR(morph.dat$FTA)
+FTA.IQR <- IQR(morph.dat$FTA)
+FTA.IQR
 #6.66
-IQR(morph.dat$PS)
+PS.IQR <- IQR(morph.dat$PS)
+PS.IQR
 #59.98
-IQR(morph.dat$PI)
+PI.IQR <- IQR(morph.dat$PI)
+PI.IQR
 #28.235
-IQR(morph.dat$AS)
+AS.IQR <- IQR(morph.dat$AS)
+AS.IQR
 #62.5825
-IQR(morph.dat$AI)
+AI.IQR <- IQR(morph.dat$AI)
+AI.IQR
 #37.975
-IQR(morph.dat$TotalArea)
+TotalArea.IQR <- IQR(morph.dat$TotalArea)
+TotalArea.IQR
 #188.5975
-IQR(morph.dat$SUP)
+SUP.IQR <- IQR(morph.dat$SUP)
+SUP.IQR
 #5.7825
-IQR(morph.dat$ANT)
+ANT.IQR <- IQR(morph.dat$ANT)
+ANT.IQR
 #4.2375
-IQR(morph.dat$AcetabularDiameter)
+AcetabularDiameter.IQR <- IQR(morph.dat$AcetabularDiameter)
+AcetabularDiameter.IQR
 #4.24
-IQR(morph.dat$PelvicBreadth)
+PelvicBreadth.IQR <- IQR(morph.dat$PelvicBreadth)
+PelvicBreadth.IQR
 #3.2525
 ```
 
 
 # 8. Calculate the variance for each of the variables in morph.dat, and assign each a name. Make sure to write down both your code and the answers below:
 ```{r}
-var(morph.dat$FemurHead)
-var(morph.dat$NSA)
-var(morph.dat$NeckLength)
-var(morph.dat$L2)
-var(morph.dat$L4)
-var(morph.dat$FTA)
-var(morph.dat$PS)
-var(morph.dat$PI)
-var(morph.dat$AS)
-var(morph.dat$AI)
-var(morph.dat$TotalArea)
-var(morph.dat$SUP)
-var(morph.dat$ANT)
-var(morph.dat$AcetabularDiameter)
-var(morph.dat$PelvicBreadth)
+FemurHead.var <- var(morph.dat$FemurHead)
+FemurHead.var
+#5.098576
+NSA.var <- var(morph.dat$NSA)
+NSA.var
+#23.78022
+NeckLength.var <- var(morph.dat$NeckLength)
+NeckLength.var
+#6.352963
+L2.var <- var(morph.dat$L2)
+L2.var
+#546.0171
+L4.var <- var(morph.dat$L4)
+L4.var
+#7.068483
+FTA.var <- var(morph.dat$FTA)
+FTA.var
+#19.40232
+PS.var <- var(morph.dat$PS)
+PS.var
+#1156.192
+PI.var <- var(morph.dat$PI)
+PI.var
+#404.6268
+AS.var <- var(morph.dat$AS)
+AS.var
+#1119.942
+AI.var <- var(morph.dat$AI)
+AI.var
+#659.2465
+TotalArea.var <- var(morph.dat$TotalArea)
+TotalArea.var
+#12511.32
+SUP.var <- var(morph.dat$SUP)
+SUP.var
+#33.90671
+ANT.var <- var(morph.dat$ANT)
+ANT.var
+#15.74555
+AcetabularDiameter.var <- var(morph.dat$AcetabularDiameter)
+AcetabularDiameter.var
+#5.618476
+PelvicBreadth.var <- var(morph.dat$PelvicBreadth)
+PelvicBreadth.var
+#11.75756
 ```
 
 
 # 9. Calculate the Standard Deviations (SD) for each of the variables in morph.dat, and assign each a name. Make sure to write down both your code and the answers below:
 ```{r}
-
+FemurHead.sd <- sd(morph.dat$FemurHead)
+FemurHead.sd
+#2.258003
+NSA.sd <- sd(morph.dat$NSA)
+NSA.sd
+#4.876497
+NeckLength.sd <- sd(morph.dat$NeckLength)
+NeckLength.sd
+#2.520508
+L2.sd <- sd(morph.dat$L2)
+L2.sd
+#23.36701
+L4.sd <- sd(morph.dat$L4)
+L4.sd
+#2.658662
+FTA.sd <- sd(morph.dat$FTA)
+FTA.sd
+#4.404806
+PS.sd <- sd(morph.dat$PS)
+PS.sd
+#34.00282
+PI.sd <- sd(morph.dat$PI)
+PI.sd
+#20.11534
+AS.sd <- sd(morph.dat$AS)
+AS.sd
+#33.46554
+AI.sd <- sd(morph.dat$AI)
+AI.sd
+#25.6758
+TotalArea.sd <- sd(morph.dat$TotalArea)
+TotalArea.sd
+#111.854
+SUP.sd <- sd(morph.dat$SUP)
+SUP.sd
+#5.822947
+ANT.sd <- sd(morph.dat$ANT)
+ANT.sd
+#3.968067
+AcetabularDiameter.sd <- sd(morph.dat$AcetabularDiameter)
+AcetabularDiameter.sd
+#2.370333
+PelvicBreadth.sd <- sd(morph.dat$PelvicBreadth)
+PelvicBreadth.sd
+#3.42893
 ```
 
 
@@ -311,7 +400,17 @@ rom.stats
 
 # Your turn, with the morphology data:
 ```{r}
+means.all <- c(femur.mean, nsa.mean, necklength.mean, L2.mean, L4.mean, FTA.mean, PS.mean, PI.mean, AS.mean, AI.mean, TotalArea.mean, SUP.mean, ANT.mean, AcetabularDiameter.mean, PelvicBreadth.mean,)
 
+meds.all <- c(FemurHead.median, NSA.median, NeckLength.median, L2.median, L4.median, FTA.median, PS.median, PI.median, AS.median, AI.median, TotalArea.median, SUP.median, ANT.median, AcetabularDiameter.median, PelvicBreadth.median)
+
+range.all <- c(FemurHead.range, NSA.range, NeckLength.range, L2.range, L4.range, FTA.range, PS.range, PI.range, AS.range, AI.range, TotalArea.range, SUP.range, ANT.range, AcetabularDiameter.range, PelvicBreadth.range)
+
+IQR.all <- c(FemurHead.IQR, NSA.IQR, NeckLength.IQR, L2.IQR, L4.IQR, FTA.IQR, PS.IQR, PI.IQR, AS.IQR, AI.IQR, TotalArea.IQR, SUP.IQR, ANT.IQR, AcetabularDiameter.IQR, PelvicBreadth.IQR)
+
+variance.all <- c(FemurHead.var, NSA.var, NeckLength.var, L2.var, L4.var, FTA.var, PS.var, PI.var, AS.var, AI.var, TotalArea.var, SUP.var, ANT.var, AcetabularDiameter.var, PelvicBreadth.var)
+
+sd.all <- c()
 ```
 
 
