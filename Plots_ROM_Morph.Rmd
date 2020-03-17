@@ -38,3 +38,23 @@ morph.dat <- read.csv(file.choose())
 ```
 
 
+# Installing package
+```{r}
+install.packages("car")
+library(car)
+```
+
+#Creating Q-Q plot
+```{r}
+indexF <- which(rom.dat$Sex == "F")
+qqPlot(indexF)
+```
+
+
+# Boxplot
+```{r}
+boxplot(Extension ~ Flexion, data = rom.dat, varwidth = TRUE, log = "y", las = 1)
+title("Extension vs. Flexion")
+```
+
+
