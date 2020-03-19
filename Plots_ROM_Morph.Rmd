@@ -58,3 +58,10 @@ title("Extension vs. Flexion")
 ```
 
 
+# Side by Side plot
+```{r}
+
+```
+
+
+
