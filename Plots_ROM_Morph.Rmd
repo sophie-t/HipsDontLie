@@ -60,8 +60,23 @@ title("Extension vs. Flexion")
 
 # Side by Side plot
 ```{r}
-
+par(mfrow = c(1,3))
+plot(rom.dat$Extension, rom.dat$Flexion)
+title("Exension vs Flexion")
+plot(rom.dat$InternalRotation, rom.dat$ExternalRotation, log = "xy")
+title("Internal vs External Rotation")
+plot(rom.dat$Abduction, rom.dat$Adduction)
+title("Abduction vs Adduction")
 ```
 
+
+#Create a scatterplot with ‘Abduction’ as the y variable. Change the shapes and colors of the points to distinguish between different variables. Add an equality reference line (with abline() function).
+
+```{r}
+plot(rom.dat$ThighLength, rom.dat$Abduction, pch = 17, col = "red")
+points(rom.dat$ThighLength, rom.dat$BiepicondylarBreadth, pch = 16, col = "blue")
+abline(a = 0, b = 1, lty = 2)
+
+```
 
 
