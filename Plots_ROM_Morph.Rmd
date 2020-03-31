@@ -80,3 +80,7 @@ abline(a = 0, b = 1, lty = 2)
 ```
 
 
+```{r}
+primate_data <- read.csv(file.choose())
+```
+
