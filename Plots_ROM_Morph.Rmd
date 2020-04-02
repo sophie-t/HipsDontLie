@@ -84,3 +84,27 @@ abline(a = 0, b = 1, lty = 2)
 primate_data <- read.csv(file.choose())
 ```
 
+#Create a scatterplot with ‘Abduction’ as the y variable and a morphology variable as the x variable. Add other morphology variables to the same plot (with points() function). Change the shapes and colors of the points to distinguish between different variables. Add an equality reference line (with abline() function).
+```{r}
+plot(primate_data$femur_head, primate_data$Abduction, pch = 17, col = "red")
+points(primate_data$AS, primate_data$Abduction, pch = 16, col = "blue")
+abline(a = 0, b = 1, lty = 2)
+
+```
+
+#Create at least one more scatterplot that compares an ROM variable to multiple morphology variables. Do you see any trends or correlations?
+
+```{r}
+plot(primate_data$NSA, primate_data$Abduction, pch = 17, col = "yellow")
+points(primate_data$SUP, primate_data$Abduction, pch = 16, col = "purple")
+abline(a = 0, b = 1, lty = 2)
+```
+
+#Last scatterplot!
+```{r}
+plot(primate_data$acetab_diameter, primate_data$Abduction, pch = 18, col = "green")
+points(primate_data$PS, primate_data$Abduction, pch = 4, col = "orange")
+abline(a = 0, b = 1, lty = 2)
+
+```
+
