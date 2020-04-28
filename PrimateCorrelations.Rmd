@@ -77,16 +77,49 @@ pri.dat
 cor(pri.dat$FemurHead, pri.dat$Abduction, method = "spearman", use = "complete.obs") # rho = 0.1932215
 
 # Your turn:
+cor(pri.dat$FemurHead, pri.dat$Abduction, method = "spearman", use = "complete.obs")
+# 0.1932215
+cor(pri.dat$NSA, pri.dat$Abduction, method = "spearman", use = "complete.obs")
+#0.6446429
+cor(pri.dat$Neck, pri.dat$Abduction, method = "spearman", use = "complete.obs")
+#0.2689705
+cor(pri.dat$L2, pri.dat$Abduction, method = "spearman", use = "complete.obs")
+#0.07410483
+cor(pri.dat$L4, pri.dat$Abduction, method = "spearman", use = "complete.obs")
+#0.06644697
+cor(pri.dat$FTA, pri.dat$Abduction, method = "spearman", use = "complete.obs")
+#0.65894
+cor(pri.dat$PS, pri.dat$Abduction, method = "spearman", use = "complete.obs")
+#0.0765416
+cor(pri.dat$PI, pri.dat$Abduction, method = "spearman", use = "complete.obs")
+#0.2075011
+cor(pri.dat$AS, pri.dat$Abduction, method = "spearman", use = "complete.obs")
+#0.02926459
+cor(pri.dat$AI, pri.dat$Abduction, method = "spearman", use = "complete.obs")
+#0.1154812
+cor(pri.dat$TotalArea, pri.dat$Abduction, method = "spearman", use = "complete.obs")
+#0.2376986
+cor(pri.dat$SUP, pri.dat$Abduction, method = "spearman", use = "complete.obs")
+#-0.5079504
+cor(pri.dat$ANT, pri.dat$Abduction, method = "spearman", use = "complete.obs")
+#-0.1153529
+cor(pri.dat$AcetabDiameter, pri.dat$Abduction, method = "spearman", use = "complete.obs")
+#0.2324671
+cor(pri.dat$PelvicBreadth, pri.dat$Abduction, method = "spearman", use = "complete.obs")
+#0.1975809
 
 ```
 
 # 3. List which morphology variables are MOST STRONGLY correlated to your ROM variable. Specify if these are positive or negative correlations.
 ```{r}
-
+cor(pri.dat$NSA, pri.dat$Abduction, method = "spearman", use = "complete.obs")
+#0.6446429
+cor(pri.dat$FTA, pri.dat$Abduction, method = "spearman", use = "complete.obs")
+#0.65894
 ```
 
 # 4. What do your results mean in real life? What have we learned about the relationships between morphologies and range of motion in primate hips? Interpret your correlation coefficients from above with words.
 ```{r}
-
+#These results show that the correlation between the morphology data variables and the abduction variable have a relatively weak correlation, since the strongest correlation values do not go above 0.65. The morphology determines the range of motion because if the structure of the hips of the primate are squished together there flexibility will be limited, meaning the abduction and adduction value will be low/small. 
 ```
 
