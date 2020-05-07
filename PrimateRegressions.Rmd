@@ -179,6 +179,7 @@ plot(pri.dat$FemurHead, pri.dat$Abduction)
 abline(lmFemurHead)
 # You can add labels, titles, text, colors, etc. if you like!
 
+
 # Your turn:
 plot(pri.dat$FemurHead, pri.dat$Abduction)
 abline(lmFemurHead)
@@ -228,18 +229,18 @@ abline(lmPelvic)
 
 # 4b. From the scatterplots above, which of your models look like good fits (best-fit line follows the data well)?
 ```{r}
-
+#NSA, SUP, FTA
 ```
 
 
 # 5. Given all the information above, which morphology variables best predict (show the strongest linear relationship with) your ROM variable? Specify if these relationships are positive (positive slope, upward sloping line) or negative (negative slope, negative sloping line) relationships.
 ```{r}
-
+#NSA (positive), FTA (horizontal line), SUP (negative)
 ```
 
 # 6. Are the morphology variables that best predict your ROM variable (from #5. above) the same or different from the morphology variabels that showed the strongest correlation to your ROM variable last week (#3. in the PrimateCorrelations.Rmd R Markdown)?
 ```{r}
-
+#They are the same ROM variables. FemurHead, AcetabDiameter, PelvicBreadth were not seen as a strong correlation after looking at the graph.  
 ```
 
 
